@@ -8,6 +8,7 @@ header {
     background: url(../images/mainslide1.jpg) no-repeat center;
     border-bottom: 1px solid #ddd;
     position: fixed;
+    z-index: 99999;
 }
 
 .head_opa {
@@ -40,6 +41,7 @@ header {
     display: block;
     line-height: 79px;
     padding: 0 15px;
+    font-weight: bold;
 }
 
 .main li a:hover {
@@ -202,9 +204,12 @@ header {
     width: 1000px;
     margin: 0 auto;
     padding: 70px 0;
+
 }
 
-.con_wrap3 {}
+.con_wrap3 {
+    overflow: hidden;
+}
 
 .con_wrap3 li {
     width: calc(100% / 3);
@@ -217,10 +222,246 @@ header {
     width: 80%;
 }
 
-.con_wrap3 li h3 {padding: 0 30px;}
+.con_wrap3 li h3 {
+    padding: 0 30px;
+}
 
 .con_wrap3 li p {
     text-align: justify;
     line-height: 1.7;
     font-size: 13px;
+    letter-spacing: -1px;
+}
+
+/* activity */
+.activtiy {
+    padding: 30px 0;
+
+}
+
+.ol {
+    width: 1000px;
+}
+
+.activtiy h3 {
+    margin: 50px 0;
+}
+
+.activtiy p {
+    font-size: 12px;
+    color: grey;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.p_first {
+    border-bottom: 2px solid rgb(19, 243, 53);
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+.aticle {
+    overflow: hidden;
+}
+
+.aticle p {
+    font-size: 12px;
+    color: grey;
+    line-height: 2;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.aticle h3 {
+    padding: 10px 0;
+}
+
+/* 포트폴리오영역/*  */
+.con_inner4 {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 70px 0;
+    overflow: hidden;
+}
+
+.img_list {}
+
+.img_list li {
+    float: left;
+    width: calc(100% / 4);
+}
+
+.img_list li div {
+    position: relative;
+    /* line-height: 0; */
+}
+
+.img_list li div a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+}
+
+.img_list li div a:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.img_list li div a span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px 0;
+    line-height: 50px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    font-size: 40px;
+}
+
+.img_list li div a span:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: blue;
+}
+
+.img_list li div img {
+    width: 100%;
+    display: block;
+}
+
+.img_list li h4 {
+    padding: 10px 0;
+}
+
+.img_list li h5 {
+    padding-bottom: 20px;
+    font-weight: 200;
+}
+
+/* consult영역 */
+
+.con_inner5 {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 90px 0 70px;
+}
+
+.form_table {
+    width: 100%;
+
+}
+
+.form_table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.t_left {
+    background-color: gray;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.phone2 {
+    width: 50px;
+}
+
+.phone3 {
+    width: 50px;
+}
+
+.t_right {
+    text-align: right;
+}
+
+.txt_pre {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+
+}
+
+.img_center {
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btn input {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.con_inner6 {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    /* padding: 90px 0 70px; */
+    margin-top: 50px;
+    background: url(../images/7-min.jpg)no-repeat center center;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.con_inner6_opa {
+    height: 400px;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    color: white;
+}
+
+.con_inner6_opa h2 {
+    padding: 50px 0 30px;
+}
+
+.con_inner6_opa p {
+    padding: 0 0 20px;
+    ;
+}
+
+.sns {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.sns li {
+    float: left;
+    width: calc(100% / 3);
+}
+
+.sns li span {
+    font-size: 12px;
+}
+
+/* footer */
+#footer{}
+.foot_up{
+    background-color: #444;
+    color: white;
+    padding: 50px 0;
+}
+.foot_up_inner{
+    width: 1000px;
+    margin: 0 auto;
+}
+.foot_down{
+    background-color: black;
+    color: white;
+    padding: 25px 0;
+
+}
+.foot_down_inner{
+    width: 1000px;
+    margin: 0 auto;
 }
